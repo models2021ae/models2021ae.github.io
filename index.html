@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Guidelines.md</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#artifact-evaluation-submission-and-reviewing-guidelines">Artifact Evaluation Submission and Reviewing Guidelines</a>
+<ul>
+<li><a href="#scope-and-objectives">Scope and Objectives</a></li>
+<li><a href="#submissions">Submissions</a></li>
+<li><a href="#submission-contents">Submission Contents</a></li>
+<li><a href="#review-process">Review Process</a></li>
+<li><a href="#evaluation-criteria">Evaluation Criteria</a></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="artifact-evaluation-submission-and-reviewing-guidelines">Artifact Evaluation Submission and Reviewing Guidelines</h1>
+<p><em>Abel Gómez and Massimo Tisi, MODELS 2021 Artifact Evaluation Chairs</em><br>
+͏͏͏  <br>
+͏͏͏  <br>
+͏͏͏  <br>
+͏͏͏  <br>
+MODELS will once again implement a separate evaluation process to assess the quality of the artifacts supporting the work presented in accepted papers. The purpose of the artifact evaluation process is to acknowledge the considerable effort required to obtain high-quality artifacts, to foster a culture of experimental reproducibility, and to provide a peer review and archiving process for artifacts analogous to that of research papers.</p>
+<p>The goal of artifact archiving is to ensure that the artifacts stay available for a long time, that they can be located easily, and can be reused by other researchers. Additionally, archiving allows to designate exactly the version of the artifact that was used to produce the research results.</p>
+<p>We aim to assess the artifacts themselves and help improve them rather than evaluate the quality of the research linked to the artifact. This process assumes that the quality of research has been already assessed and approved for MODELS by the respective program committees. Thus, the main goal of our review process is constructive: to improve the submitted artifacts, not to reject or filter them. An artifact evaluation rejection may happen if we determine that improving the artifact to sufficient quality is impossible in the given time frame, the artifact is not consistent with the paper’s results, or the artifact itself is not of sufficient relevance to the scope of the main research paper or to the MODELS community at large.</p>
+<h2 id="scope-and-objectives">Scope and Objectives</h2>
+<p>This document outlines, briefly, the submission and reviewing process for the artifact evaluation (AE) track of MODELS 2021. It aims at providing authors and reviewers with pragmatic insights into the process and expected criteria to merit awarding the respective badges.</p>
+<h2 id="submissions">Submissions</h2>
+<p>Authors are expected to submit through <a href="https://easychair.org/conferences/?conf=models2021ae">EasyChair</a> their artifact and/or its documentation in a <code>.zip</code>, <code>.tar</code>, <code>.gz</code> or <code>.tgz</code> file. Submissions of up to 100Mbs are allowed. If the artifact is bigger than that, proper links to external repositories or cloud services should be provided. Artifact documentation may differ depending on the envisioned badge:</p>
+<ul>
+<li>
+<p><strong>Artifacts Evaluated – Reusable.</strong> The emphasis lies on providing documentation on the research artifact previously prepared and archived. Here, the authors need to write and submit documentation explaining how to obtain the artifact package, how to unpack the artifact, how to get started, and how to use the artifact in more detail. The submission must only describe the technicalities of the artifact and uses of the artifact that are not already described in the paper.</p>
+</li>
+<li>
+<p><strong>Artifacts Available.</strong> The authors must give the location of the artifact on a publicly accessible archival repository, along with a <strong>DOI or a permanent link</strong> to the repository. Submitting artifacts themselves through EasyChair without making them publicly accessible (through a repository or an archival service) will not be sufficient.</p>
+</li>
+<li>
+<p><strong>Results Reproduced or Replicated.</strong> The emphasis here lies on providing information about how their already published research has been reproduced or replicated as well as links to further material (e. g., the papers and artifacts in question). We encourage submissions for those badges by the replicating authors nominating the original authors. If the authors are not aiming for the <em>Artifacts Available</em> badge, the artifacts do not necessarily have to be publicly accessible for the review process. However, the authors should clearly explain why the artifact is not publicly available, for example, because of privacy concerns, law, or NDAs in place. In this very case, the authors are asked to provide either a private link / password-protected link to a repository or they may submit the artifact directly through EasyChair and it should become clear which steps are necessary for authors who would like to reuse the artifact.</p>
+</li>
+</ul>
+<p><strong>When performing the submission, authors must state which badges they apply for in the submission form in <a href="https://easychair.org/conferences/?conf=models2021ae">EasyChair</a>.</strong></p>
+<h2 id="submission-contents">Submission Contents</h2>
+<p>Regardless of the badge, authors must provide in the archive file (<code>.zip</code>, <code>.tar</code>, <code>.gz</code> or <code>.tgz</code>) of submission the artifact (if its not publicly available) or documentation explaining how to obtain the artifact package (if it is publicly available), and documentation on how to unpack the artifact, how to get started, and how to use the artifacts in more detail. The submission must only describe the technicalities of the artifacts and uses of the artifact that are not already described in the paper; nevertheless, the artifact and its documentation should be self-contained. The submission should contain (and/or link to) the following documents — in markdown (preferred), plain text, or PDF format:</p>
+<ul>
+<li>
+<p>A copy of the <strong>accepted paper</strong> in PDF format (to be sent via <a href="https://easychair.org/conferences/?conf=models2021ae">EasyChair</a>).</p>
+</li>
+<li>
+<p>A <strong>README</strong> main file describing what the artifact does and where it can be obtained (with hidden links and access password if necessary). Also, <strong>there should be a clear description how to repeat/replicate/reproduce</strong> the results presented in the paper. Artifacts which focus on data should, in principle, cover aspects relevant to understand the context, data provenance, ethical and legal statements (as long as relevant), and storage requirements. Artifacts which focus on software should, in principle, cover aspects relevant to how to install and use it (and be accompanied by a <strong>small example</strong>).</p>
+</li>
+<li>
+<p>A <strong>REQUIREMENTS</strong> file for artifacts which focus on software. This file should, in principle, cover aspects of hardware environment requirements (e.g., performance, storage or non-commodity peripherals) and software environments (e.g., Docker, VM, and operating system) but also, if relevant, a requirements.txt with explicit versioning information (e.g. for Python-only environments). Any deviation from standard environments needs to be reasonably justified.</p>
+</li>
+<li>
+<p>A <strong>STATUS</strong> file stating the reasons why the authors believe that the artifact deserves the badge(s) they apply for in the EasyChair submission.</p>
+</li>
+<li>
+<p>A <strong>LICENSE</strong> file describing the distribution rights. Note that to score “available” or higher, then that license needs to be some form of open source license.</p>
+</li>
+<li>
+<p>An <strong>INSTALL</strong> file with installation instructions. These instructions should include notes illustrating a very basic usage example or a method to test the installation. This could be, for instance, on what output to expect that confirms that the code is installed and working; and the code is doing something interesting and useful.</p>
+</li>
+</ul>
+<h2 id="review-process">Review Process</h2>
+<p>The following section’s intended audience is the Program Committee (PC) and, thus, addresses the PC members of the Artifact Evaluation track (and is written accordingly), but it is available to authors since they may participate in the <em>Initial Review and Rebuttal Phase</em>.</p>
+<p>The task of reviewing artifacts involves three phases (<strong>all dates are UTC-12, i.e., AoE</strong>):</p>
+<ol>
+<li>Bidding Phase (July 18, 2021)</li>
+<li>Initial Review and Rebuttal Phase (July 19 – July 24, 2021)</li>
+<li>In-depth Review Phase (July 25 – July 29, 2021)</li>
+</ol>
+<h3 id="bidding-phase-july-18-2021">Bidding Phase (July 18, 2021)</h3>
+<p>Authors who are planning to submit a research artifact are requested to register their artifacts by July 17, 2021 using EasyChair. The submission includes all relevant information and / or links to the repositories containing the information (such as the artifact itself). Immediately after the submission deadline, we will invite you to submit your bids in the Easychair tool. Due to time constraints imposed by the MODELS 2021 schedule (Artifact Evaluation must take place between the technical track notification and the technical track camera ready), the bids should be placed within 24h (July 18, 2021 AoE).</p>
+<p>Please consider your conflicts of interest, your research topics, and your experiences with specific tools and technologies (if applicable) when placing your bids.</p>
+<h3 id="initial-review-and-rebuttal-phase-july-19-–-july-24-2021">Initial Review and Rebuttal Phase (July 19 – July 24, 2021)</h3>
+<p>Before the actual in-depth review phase (where no interaction with the authors will take place anymore), reviewers will be asked to check the integrity of the research artifacts and to look for possible setup problems or other smaller technical issues that may prevent the artifact from being properly evaluated (e.g., corrupted or missing files, provided VMs won’t start, immediate crashes on the simplest example).</p>
+<p>During this phase, PC members may require the authors clarifications on the basic installations and start-up procedures or to resolve simple installation problems. PC members who wish to communicate with the authors of the artifacts are asked to email the track chairs at <a href="mailto:models2021ae@easychair.org">models2021ae@easychair.org</a>. In this case, the orchestration of the communication will be started by the PC chairs, who will send the authors and the reviewers a URL to access a chat and a shared document allowing them to communicate anonymously during the rebuttal period. Since EasyChair does not allow this kind of interaction between authors and reviewers, we will use <em>Etherpad</em> to perform this communication during the <em>Initial Review and Rebuttal Phase</em>. A demonstration site, similar to the one that will be used during the actual <em>Initial Review and Rebuttal Phase</em>, can be found at <a href="https://issipad.dsic.upv.es/mypads/?/mypads/group/models-2021-ae-9d23sa0/pad/view/demo-i9123s5n">https://issipad.dsic.upv.es/mypads/?/mypads/group/models-2021-ae-9d23sa0/pad/view/demo-i9123s5n</a> (password: <code>models2021</code>).</p>
+<p><strong>IMPORTANT: Do not put any private or sensitive information in the demonstration Pad, this Pad is visible by anybody and contents are not deleted when disconnecting from it!!</strong></p>
+<p>To expedite the review process, we are encouraging the reviewers to try to send all their issues related to installation in one short message, if possible. Given the short review time available, the authors are expected to respond within a 24/48-hour period. Note that any communication between a reviewer and the authors will be visible to all reviewers assigned to the same artifact to mitigate unnecessary overlaps in effort.</p>
+<h3 id="in-depth-review-phase-july-25-–-july-29-2021">In-depth Review Phase (July 25 – July 29, 2021)</h3>
+<p>After the first quick checks during the initial review and rebuttal phase, possibly leading to the fixing of problems or clarifications during the initial review and rebuttal phase, the actual in-depth review will start. We will use a single-blind review process.</p>
+<p>Reviewers review the artifact documentation provided by the authors (e.g. referring to the README file in a repository). The authors explain in their submission which badges they are aiming for (STATUS file). The reviewers are then asked to review the artifact for the respective criteria (see below) and decide whether the envisioned badge(s) can be awarded, whether an alternative badge should be awarded (provided the submission meets the criteria), or whether no badge can<br>
+be awarded at all.</p>
+<p>Reviewers are expected to assess if and how the things described in the  submission are reflected by the actual artifact in the repository. However, we would like to stress the importance to avoid a black and white decision or searching for small issues that prevent issuing a badge. The whole point of this track is to promote open science in our research community and help authors willing to share their artifacts in doing this correctly (and efficiently).</p>
+<p>Reviewers are expected to enter the badge decision on Easychair together with a short review explaining the badge decision. Please note that we do not expect an in-depth review report, but only a short explanation why or why not a certain badge should be awarded.</p>
+<p>Artifacts may be awarded none, one, two, or all three of the (i) Artifacts Evaluated - Reusable, (ii) Artifacts Available, and (iii) Results Reproduced or Results Replicated (depending on the kind of artifact). You can therefore select in EasyChair all of the scores that apply:</p>
+<ul>
+<li><strong>No badge</strong></li>
+<li><strong>Artifacts Evaluated – Reusable</strong></li>
+<li><strong>Artifacts Available</strong></li>
+<li><strong>Results Reproduced</strong> or <strong>Results Replicated</strong> (depending on the kind of artifact)</li>
+</ul>
+<p><strong>Reviewers are asked to submit their reviews as soon as possible and not to submit all their reviews at once at the end of the review phase so that any discussion about acceptance can start as soon as possible.</strong></p>
+<h2 id="evaluation-criteria">Evaluation Criteria</h2>
+<p>The subsequent checklist comprehends a non-exhaustive list of criteria for the evaluation of the artifact submissions for eligibility of the respective badges. We distinguish minimum criteria (which must be met to merit receiving the badge) and optional criteria which we recommend, but do not impose yet as imperative.</p>
+<h3 id="reusable-badge-criteria">Reusable badge Criteria</h3>
+<p>For the sake of simplicity, we consider reusable as an extension of functional. That is, artifacts which qualify for Reusable, are per definition Functional but not necessarily vice-versa. In any case, as the scope of the AE track is to foster reusability of artifacts (and beyond), we decided to not evaluate and reward Functional badges.</p>
+<h4 id="minimum-criteria">Minimum Criteria</h4>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifacts are well documented and offer, at minimum, an inventory of the contents and sufficient description to enable the artifacts to be exercised.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifacts are relevant to the associated paper and contribute to the generation of its main results.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifacts are self-contained and exercisable and include scripts and/or software used to generate the results described in the associated paper, i.e. their integrity allows for a successful execution (if applicable, i.e. software-related) and included data can be accessed and appropriately manipulated.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifacts have a proper license available for the artifact, explicitly documented in a separate file (e.g. <code>LICENSE.md</code>).</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Installation Packages have an explicit documentation of the requirements/prerequisites necessary for potential installations or executions of code (e.g. in a file <code>REQUIREMENTS.md</code>). Note that this also includes requirements towards operating systems and hardware.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Installation Packages have an installation script and step-by-step instructions that allow for the automatic installation of necessary tools and environments. When required environments or operating systems deviate from the norm (which is essentially always the case as there is no real norm), the package must include as well virtual environments (e.g. Docker container image or VirtualBox VM image). The installation must be executable without problems.</p>
+<p>Please note that it is the responsibility of submitting authors to provide an installation package that allows to run the artifact in the evaluator’s environment. The instructions themselves should be kept to the absolutely required minimum and we recommend relying on virtual environments / automation as much as possible. The underlying assumption is that if artifacts cannot be installed/exercised without reasonable technical knowledge or without expertise in the research field, then other authors who would make use of that artifact may run into problems as well. In this case, we argue, the badge should not be awarded.</p>
+<p>In any case, the identification of potential causes for failed installations or executions is not part of the reviewers’ tasks.</p>
+</li>
+</ul>
+<h4 id="optional-criteria">Optional Criteria</h4>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifacts have an indication of the time needed to run them (e.g., 1 hour, 4 hours, 2 days) and how to run a shorter version (e.g., 10 min.) to check that it is functional.</li>
+</ul>
+<h3 id="available-badge-criteria">Available badge Criteria</h3>
+<p>The badge for Available artifacts extends the Reusable badge insofar that the artifact must be made permanently available, i.e. it is publicly available through a <strong>preserved, publicly accessible repository with a stable URL and a DOI</strong>.</p>
+<h4 id="minimum-criteria-1">Minimum Criteria</h4>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Previously listed criteria and in addition:</p>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifact is available for public download from a repository without the need to register.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifact is available for public download from a persistent repository with a stable URL. Note that we consider temporary drives (e.g. dropbox, google) to be non-persistent, same as individual/institutional websites of the submitting authors, as these are prone to changes. Although not limited to, we strongly recommend relying on services like Zenodo to archiving repositories / repository releases (e.g. from GitHub) as these services are persistent and they also allow assigning a DOI.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifact is associated with a Digital Object Identifier (DOI).</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="optional-criteria-1">Optional Criteria</h4>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Artifacts have an explicit documentation of the authors of the artifacts and, ideally, indicators on how to cite them when making use of the artifacts. The authors lists are directly accessible from the main description of the artifact or available through a dedicated file (e.g. <code>AUTHORS.md</code>).</li>
+</ul>
+<h3 id="replicated-and-reproduced-badge-criteria">Replicated and Reproduced badge Criteria</h3>
+<p>The criteria for the replicated and the reproduced badge are primarily assessed based on the submitted documents that outline that (and how) selected artifacts have reached that stage. That is, reviewers are not expected to review the actual reproduction entirely and we expect the abstracts to show that:</p>
+<ul>
+<li>
+<p>if the <strong>Replicated</strong> is asked, the main results of the paper have been obtained in a subsequent study by a person or team other than the original author, using, in part, the artifacts provided by the author;</p>
+</li>
+<li>
+<p>if the <strong>Reproduced</strong> badge is asked, the main results of the paper have been independently obtained in a subsequent study by a person or team other than the original authors, without the use of author-supplied artifacts.</p>
+</li>
+</ul>
+<p>The main difference between Replicated and Reproduced lies, therefore, in whether the external replication (partially) needs to rely on artifacts by the authors of the research being replicated or whether the reproduction can be achieved completely independently.</p>
+<p>Please note that to merit the badge Replicated or Reproduced , it is sufficient if the results are within a margin / tolerance and slightly deviate from those results of the original study as long as the main claims in the original paper are not changed. This is especially true for non-computational studies (e.g., qualitative studies). Also note that it is not the responsibility of the reviewers to completely replicate/reproduce the study by themselves but of the authors to reasonably convey how this has been achieved. The goal of the AE track is to promote work that allows the broader community to use the artifacts, not in-house specialists only.</p>
+<h4 id="minimum-criteria-2">Minimum Criteria</h4>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> The paper reporting on the replication/reproduction has been peer-reviewed.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> The original paper being reproduced and potentially awarded the badge is publicly available (via a submitted URL directory).</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Authorships of the reproduced/replicated artifact must not overlap with the reproducing/replicating artifact.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> The abstract clearly outlines WHAT is being reproduced, WHY it is important, and HOW exactly it has been done. If the replication/reproduction was only partial, then the authors clearly explain what parts could be achieved or which are missing.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Submission lays out substantial evidence on replication/reproduction.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> The abstract clearly shows that the main results of the paper have been obtained without author-supplied artifacts (for Reproduced only).</p>
+</li>
+</ul>
+<h4 id="optional-criteria-2">Optional Criteria</h4>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Authors pay due respect to the other work related to the reproduction/replication. That is, the abstract is not necessarily critical towards others in the research community.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Mostly only in case the submitting authors are not the ones of the original work being reproduced/replicated but authors nominating original work, authors provide a critical reflection upon what aspects made it easier/harder to replicate/reproduce and what are the lessons learned from this work that would enable more replication/reproduction in the future for other kinds of tasks or other kinds of research.</p>
+</li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This guide is based on previous guides for artifact evaluation, mainly <a href="https://2021.esec-fse.org/getImage/orig/fse_artifacts_submission_reviewing_guidelines_v3.pdf">ESEC-FSE 2021</a> (by Panos Louridas), <a href="https://conf.researchr.org/getImage/icse-2021/orig/Submission.and.Reviewing.GuidelinesNUEVO.pdf">ICSE 2021</a> (by Silvia Abrahão and Daniel Mendez) and <a href="https://2019.icse-conferences.org/getImage/orig/Artifacts.pdf">ICSE 2019</a> (by Paul Grünbacher and Baishakhi Ray).</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
